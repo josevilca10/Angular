@@ -6,6 +6,12 @@
   <h2>{{ email }}</h2>
   <h2><a href="{{ webpage }}" target="_blank">{{ webpage }}</a></h2>
 
+  <div>
+    <h3>Añadir Hobby:</h3>
+    <input type="text" [(ngModel)]="nuevoHobby">
+    <button (click)="addHobby()">Agregar Hobby</button>
+  </div>
+
   <div *ngIf="showHobbies()" class="component2">
     <h3>Hobbies:</h3>
     <ul>
