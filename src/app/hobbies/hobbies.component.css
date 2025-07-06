@@ -1,0 +1,9 @@
+div {
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f0f0f0;
+}
+input {
+  margin-right: 5px;
+}

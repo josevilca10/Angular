@@ -1,5 +1,19 @@
-<div class="user-card">
-  <p><strong>Nombre:</strong> {{ userName }}</p>
-  <p><strong>Email:</strong> {{ userEmail }}</p>
-  <p><strong>Web:</strong> <a href="{{ userWebpage }}" target="_blank">{{ userWebpage }}</a></p>
+<div class="black">
+  <h1>{{ title }}</h1>
 </div>
+<div class="ash">
+  <h2>{{ name }}</h2>
+  <h2>{{ email }}</h2>
+  <h2><a href="{{ webpage }}" target="_blank">{{ webpage }}</a></h2>
+
+  <app-hobbies
+    [hobbiesList]="hobbies"
+    [nuevoHobbyValue]="nuevoHobby"
+    (hobbyToAdd)="addHobby($event)">
+  </app-hobbies>
+
+  <app-user-list></app-user-list>
+
+</div>
+
+<app-user-profile [userName]="name" [userEmail]="email" [userWebpage]="webpage"></app-user-profile>

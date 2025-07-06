@@ -1,0 +1,18 @@
+<div>
+  <h3>Mis Hobbies:</h3>
+  <div *ngIf="hobbiesList.length > 0; else noHobbies">
+    <ul>
+      <li *ngFor="let hobby of hobbiesList">{{ hobby }}</li>
+    </ul>
+  </div>
+  <ng-template #noHobbies>
+    <p>Aún no has añadido hobbies.</p>
+  </ng-template>
+
+  <hr>
+
+  <div>
+    <input type="text" [(ngModel)]="nuevoHobbyValue" placeholder="Nuevo Hobby">
+    <button (click)="onAddHobbyClick()">Agregar Hobby</button>
+  </div>
+</div>

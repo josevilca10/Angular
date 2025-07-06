@@ -1,14 +1,17 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-user-profile',
-  templateUrl: './user-profile.component.html',
-  styleUrls: ['./user-profile.component.css']
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
-export class UserProfileComponent {
-  @Input() userName: string = '';
-  @Input() userEmail: string = '';
-  @Input() userWebpage: string = '';
+export class AppComponent {
+  title = 'mi-proyecto-angular';
+  name = "JOSE ARMANDO VILCA MAMANI";
+  email = "jvilcamam@unsa.edu.pe";
+  webpage = "https://www.unsa.edu.pe";
+  hobbies: string[] = []; 
+  nuevoHobby: string = ''; 
 
   constructor() { }
 }
