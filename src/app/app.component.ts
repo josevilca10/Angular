@@ -9,9 +9,9 @@ export class AppComponent {
   title = 'mi-proyecto-angular';
   name = "JOSE ARMANDO VILCA MAMANI";
   email = "jvilcamam@unsa.edu.pe";
-  webpage = "http://www.unsa.edu.pe";
+  webpage = "https://www.unsa.edu.pe";
   hobbies: string[] = [];
-  nuevoHobby: string = ''; 
+  nuevoHobby: string = '';
 
   constructor() { }
 
