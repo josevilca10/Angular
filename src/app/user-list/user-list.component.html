@@ -1,0 +1,14 @@
+<div>
+  <h3>Lista de Usuarios:</h3>
+  <ul>
+    <li *ngFor="let usuario of usuarios">
+      {{ usuario }} <button (click)="borrarUsuario(usuario)">Borrar</button>
+    </li>
+  </ul>
+</div>
+
+<div>
+  <h3>Agregar Nuevo Usuario:</h3>
+  <input type="text" #nuevoUsuarioInputRef [ngModel]="nuevoUsuarioInput">
+  <button (click)="agregarUsuario()">Agregar Usuario</button>
+</div>

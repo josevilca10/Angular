@@ -19,20 +19,8 @@
     </ul>
   </div>
 
-  <div>
-    <h3>Lista de Usuarios:</h3>
-    <ul>
-      <li *ngFor="let usuario of usuarios">
-        {{ usuario }} <button (click)="borrarUsuario(usuario)">Borrar</button>
-      </li>
-    </ul>
-  </div>
+  <app-user-list></app-user-list>
 
-  <div>
-    <h3>Agregar Nuevo Usuario:</h3>
-    <input type="text" #nuevoUsuarioInputRef [ngModel]="nuevoUsuarioInput">
-    <button (click)="agregarUsuario()">Agregar Usuario</button>
-  </div>
 </div>
 
 <app-user-profile [userName]="name" [userEmail]="email" [userWebpage]="webpage"></app-user-profile>
